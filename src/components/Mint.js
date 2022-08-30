@@ -1,6 +1,9 @@
 import React, { Component, Fragment } from "react";
+import Web3 from "web3";
 
 class Mint extends Component {
+
+
   render() {
     return (
       <div>
