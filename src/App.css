@@ -38,3 +38,26 @@ position:absolute;top:0;left:0;z-index:-1
     box-shadow:  3px 3px rgba(67, 57, 57 ,0.3);
     transition: all 1s ;
 }
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingIndicator {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid grey; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin-top: 15px;
+}

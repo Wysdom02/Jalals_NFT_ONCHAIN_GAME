@@ -10,10 +10,14 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Layout from "./components/Layout";
 import ConnectButton from "./components/connectButton";
 import Stake from "./components/Stake";
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer.js";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
+
 
 } from "react-router-dom";
 
@@ -110,6 +114,10 @@ class App extends Component {
 </Routes>
 </Router>
       
+
+      <Navbar></Navbar>
+      <Home />
+      <Footer></Footer>
     </div>
   );
 }
