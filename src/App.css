@@ -38,3 +38,52 @@ position:absolute;top:0;left:0;z-index:-1
     box-shadow:  3px 3px rgba(67, 57, 57 ,0.3);
     transition: all 1s ;
 }
+
+.homepage{
+background-color: #129252  ;   
+}
+
+.homehead{
+  font-family: 'Silkscreen', cursive;
+  padding-top: 3rem;
+  text-align: center;
+  color: #D8CDB4;
+  font-size: 5rem;
+}
+
+.homehead2{
+  color: white;
+  font-size: 4rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.homeimg{
+  max-width: 80%;
+  margin: 0 2em;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  
+}
+
+.column img {
+margin: 0;
+  margin-top: 8px;
+  vertical-align: middle;
+
+  width: 77.5%;
+  height: 47%;
+}
+
