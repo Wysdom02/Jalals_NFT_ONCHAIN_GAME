@@ -1,14 +1,19 @@
 import React, { Component, Fragment } from "react";
-
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import jalals from "../images/Jalals.jpeg";
+import '../App.css'
+import Image from 'react-bootstrap/Image'
+import Container from 'react-bootstrap/Container';
+
 
 class Home extends Component {
   render() {
     return (
-      <div>
+      <Container className="Container">
         <h1>Hello, Welcome to JALALAND !</h1>
-        <img src={jalals} alt="Jalas" />
-      </div>
+        <Image fluid={true} className = "image" src={jalals} alt="Jalas" />
+      </Container>
     );
   }
 }

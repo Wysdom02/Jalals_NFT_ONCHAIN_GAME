@@ -1,0 +1,50 @@
+.stakepage{
+    background-color: #D8CDB4;
+    padding: 2em;
+    font-size: larger;
+    color: #D8CDB4;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.smalls{
+    font-size: larger;
+    min-height: 5rem;
+    background-color: black;
+
+    margin: 1rem ;
+    margin-top: 0.3rem;
+    text-align: center;
+    padding: 2rem;
+    
+}
+.smallers{
+    font-size: larger;
+    min-height: 5rem;
+    background-color: black;
+
+    margin: 1rem ;
+    text-align: center;
+    padding: 1.5rem;
+    transition: all 1s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+    
+}
+.smallers:hover{
+    transform: scale(1.05);
+}
+
+.mids{
+    font-size: larger;
+    min-height: 19rem;
+    background-color: black;
+
+    margin: 1rem ;
+    
+}  
+
+.heading{
+    padding: 3rem;
+    color: black;
+    min-height:  40% ;
+}
+

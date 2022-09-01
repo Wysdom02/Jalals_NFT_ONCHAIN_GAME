@@ -1,0 +1,19 @@
+Attck page
+
+Balance
+Missile token - balance
+Attack - Button
+Attack Input (NFT-ID)
+attack Input 02 - (Attack NFT ID)
+
+On-Attack 
+{If owner
+ if attack NFT listed below threshold
+
+Fetching both nfts and displaying
+
+Attack animation from nft1 to nft 2
+
+attacked nft replaced 
+
+}
