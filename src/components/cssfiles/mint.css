@@ -1,0 +1,60 @@
+.mintpage{
+ background-color: #1bad64  ;   
+ padding: 1.8rem 0;
+
+ font-size: 1.3rem;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.bigger{
+    font-size: larger;
+    min-height: 30rem;
+    background-color: black;
+    color: aliceblue;
+    margin: 1rem ;
+    text-align: center;
+    padding: 1.8rem;
+
+    text-decoration: underline;
+
+    
+}
+
+.smallt{
+    font-size: larger;
+    min-height: 6rem;
+    background-color: black;
+    color: aliceblue;
+    margin: 1rem ;
+    text-align: center;
+    padding: 1.8rem;
+
+
+}
+.smallert{
+    font-size: larger;
+    min-height: 5rem;
+    background-color: black;
+    color: aliceblue;
+    margin: 1rem ;
+    text-align: center;
+    padding: 1.5rem;
+    transition: all 1s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+}
+.smallert:hover{
+    transform: scale(1.05);
+}
+
+.midt{
+    font-size: larger;
+    min-height: 24rem;
+    background-color: black;
+    color: aliceblue;
+    margin: 1rem ;
+    /* border-right: 6rem solid #1bad64; */
+}  
+
+.col3{
+    margin: 0 4%;
+}

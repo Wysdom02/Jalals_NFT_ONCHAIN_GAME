@@ -29,7 +29,7 @@ class Attack extends Component {
       </Card.Body>
     </Card>
         <Form.Label>Enter Your NFT ID</Form.Label>
-        <Form.Control type="email" placeholder="NFT_ID/TokenNo." className="inputbox" onChange={ e => this.props.getNFT(e.target.value,1)}/>
+        <Form.Control type="email" placeholder="NFT_TokenNo." className="inputbox" onChange={ e => this.props.getNFT(e.target.value,1)}/>
       </Form.Group>
       </Col>
 
@@ -46,7 +46,7 @@ class Attack extends Component {
       </Card.Body>
     </Card>
         <Form.Label>Enter NFT ID you Want to Attack</Form.Label>
-        <Form.Control type="email" placeholder="NFT_ID/TokenNo."  className="inputbox"  onChange={ e => this.props.getNFT(e.target.value,2)} />
+        <Form.Control type="email" placeholder="NFT_TokenNo."  className="inputbox"  onChange={ e => this.props.getNFT(e.target.value,2)} />
       </Form.Group>
       </Col>
       </Row>

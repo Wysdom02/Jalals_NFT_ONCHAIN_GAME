@@ -23,25 +23,28 @@ function Collapsible() {
           <Nav className="me-auto">
           </Nav>
           <Nav>
-            <Nav.Link href="/mint">Mining</Nav.Link>
-            <img
+            <Nav.Link href="/mint">Mint</Nav.Link>
+            {/* <img
               alt=""
               src="https://jalalstest.my.canva.site/videos/aced88fff16f7b9f612c332a878271e1.gif"
               width="30"
               height="30"
               className="d-inline-block align-top"
-            />{' '}
+            />{' '} */}
             
             <Nav.Link eventKey={2} href="/attack">
               Attack
             </Nav.Link>
-            <img
+            {/* <img
               alt=""
               src="https://jalalstest.my.canva.site/videos/37fff48731c5d92b578bb926cee42ee6.gif"
               width="30"
               height="30"
               className="d-inline-block align-top"
-            />{' '}
+            />{' '} */}
+            <Nav.Link eventKey={2} href="/stake">
+              Stake
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

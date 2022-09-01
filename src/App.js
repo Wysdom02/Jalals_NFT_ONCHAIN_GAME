@@ -9,7 +9,7 @@ import NavbarB from "./components/Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Layout from "./components/Layout";
 import ConnectButton from "./components/connectButton";
-
+import Stake from "./components/Stake";
 import {
   BrowserRouter as Router,
   Routes,
@@ -105,7 +105,8 @@ class App extends Component {
   nftlink2={this.state.nftlink2}
 
 />}/>
-  <Route  path="mint" component={<Mint/>}/>        
+  <Route  path="mint" element={<Mint/>}/>   
+  <Route path="/stake" element={<Stake/>}/>     
 </Routes>
 </Router>
       

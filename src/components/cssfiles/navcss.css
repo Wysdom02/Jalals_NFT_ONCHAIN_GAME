@@ -21,9 +21,7 @@
 
  .trapeze {
     border: 3px solid rgba(93, 22, 22,0.9);
-    
-    position: fixed;
-    top: 0;
+
     display: block;
     font-family: 'Silkscreen', cursive;
     font-size: x-large;

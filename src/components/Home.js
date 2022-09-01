@@ -1,9 +1,12 @@
 import React, { Component, Fragment } from "react";
-
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import jalals from "../images/Jalals.jpeg";
 import '../App.css'
 import Image from 'react-bootstrap/Image'
 import Container from 'react-bootstrap/Container';
+
+
 class Home extends Component {
   render() {
     return (
