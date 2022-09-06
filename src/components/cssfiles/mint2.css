@@ -1,0 +1,46 @@
+
+.btn2{
+    font-size: larger;
+    min-height: 5rem;
+    color: aliceblue;
+    margin: 1rem ;
+    text-align: center;
+    padding: 1.5rem;
+    transition: all 1s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+    width: 50%;
+  background-color: black;
+  border-radius: 5px;
+    margin: 8rem 25%;
+  border: white solid 1px;
+  font-size: 2rem;
+  }
+  .btn2:hover{
+    transform: scale(1.05);
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+  }
+
+.jalalgif{
+    width: 55%;
+    margin:10% 17%;
+    border-radius: 5px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39) ;
+    border: black solid 2px;
+    transition: all 1s;
+}
+.jalalgif:hover{
+    transform: scale(1.02);
+
+  }
+
+.mintpage2{
+    background-color: rgb(0, 121, 64);
+    min-height: 90vh;
+}
+.heading2{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

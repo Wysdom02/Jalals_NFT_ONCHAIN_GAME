@@ -1,0 +1,46 @@
+.dangerdiv{
+    width: 70%;
+    margin: 4% 15%;
+    padding: 2rem;
+    border: 2px solid black;
+    max-height: 50vh;
+    overflow-y: auto;
+  }
+  
+
+
+  .dangerrow{
+    transition: all 1s;
+    background-color: #26955e;
+    border: #187647 1px solid;
+    padding: 1%;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 1%;
+  }
+
+
+  .dangerrow:hover{
+    transform: scale(1.04);
+  }
+  .mintpage{
+    background-color: #1bad64  ;   
+    padding: 1.8rem 0;
+   
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 90vh;
+   
+   }
+
+   .bordered{
+    border: 2px solid black;
+    transform: scale(1.04);
+    background-color:rgba(0, 0, 0, 0.2)
+   }
+  
+
+  
+
+  
+  
