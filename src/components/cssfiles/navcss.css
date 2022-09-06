@@ -1,28 +1,15 @@
- /* .trapeze {
-    border-radius: 0 0 25px 25px;
-     border: 3px solid rgba(93, 22, 22,0.9);
-    background-color: rgba(0, 0, 0, 0.716);
-    transform-style: preserve-3d;
-    transform: perspective(200em) rotateX(-15deg);
-    text-transform: rotateX(25deg);
-    justify-content: center;
-    font-size: larger;
-    position: fixed;
-    display: flex;
-  }
-
-  .trapeze:hover {
-    box-shadow: 0 0 3em 0 rgba(181, 57, 57, 0.9);
-    transform: perspective(180em) rotateX(-5deg);
-    transition: 0.3s;
-  }  */
-  
-
-
- .trapeze {
+.trapeze {
     border: 3px solid rgba(93, 22, 22,0.9);
 
     display: block;
     font-family: 'Silkscreen', cursive;
     font-size: x-large;
+ }
+ .navimg{
+    cursor: pointer;
+    transition: all 0.6s ;
+ }
+
+ .navimg:hover{
+    transform: scale(1.1);
  }

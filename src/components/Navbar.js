@@ -2,11 +2,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import "./cssfiles/navcss.css";
+import metamask from "../images/metamask.svg"
+import React, { Component } from "react";
 
-
-
-function Collapsible() {
-
+class Collapsible extends Component {
+  render() {
   return (
     
     <div>
@@ -16,7 +16,7 @@ function Collapsible() {
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='trapeze'>
       <Container >
      
-        <Navbar.Brand href="/">Jalals</Navbar.Brand>
+        <Navbar.Brand href="/"><h2>Jalals</h2></Navbar.Brand>
         
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -24,27 +24,32 @@ function Collapsible() {
           </Nav>
           <Nav>
             <Nav.Link href="/mint">Mint</Nav.Link>
-            {/* <img
-              alt=""
-              src="https://jalalstest.my.canva.site/videos/aced88fff16f7b9f612c332a878271e1.gif"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />{' '} */}
+           
             
             <Nav.Link eventKey={2} href="/attack">
               Attack
             </Nav.Link>
-            {/* <img
-              alt=""
-              src="https://jalalstest.my.canva.site/videos/37fff48731c5d92b578bb926cee42ee6.gif"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />{' '} */}
-            <Nav.Link eventKey={2} href="/stake">
-              Stake
+
+            <Nav.Link eventKey={2} href="/claim">
+              Claim
             </Nav.Link>
+            <Nav.Link eventKey={2} href="/stats">
+              Stats
+            </Nav.Link>
+            <Nav.Link eventKey={2} href="/danger">
+              Defend
+            </Nav.Link>
+            
+            <img className="navimg" onClick={(e)=> {
+            e.preventDefault() 
+            this.props.loadBlockchain() 
+          } }
+              src={metamask}
+              width="40"
+              height="40"
+              alt="React Bootstrap logo"
+            />
+            
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -53,44 +58,6 @@ function Collapsible() {
     </div>
   );
 }
-
+}
 export default Collapsible;
 
-import React, { Component, Fragment } from "react";
-
-class Navbar extends Component {
-  connectToWallet = async () => {
-    try {
-      await window.ethereum.enable().then((account) => {
-        console.log("Connect button clicked !");
-        this.setState({ account: account[0] });
-        console.log(account[0]);
-      });
-      // this.loadWeb3();
-    } catch (error) {}
-  };
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      account: "0x0",
-    };
-  }
-
-  render() {
-    return (
-      <div>
-        <h3>Navbar</h3>
-        <button onClick={this.connectToWallet}>Connect Wallet </button>
-
-        {this.state.account != "0x0" ? (
-          <h4>{this.state.account}</h4>
-        ) : (
-          <div></div>
-        )}
-      </div>
-    );
-  }
-}
-
-export default Navbar;

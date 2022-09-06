@@ -3,6 +3,26 @@
   max-width: 100%;
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:  #262525   ;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black; 
+}
 .Container
 {
   max-width: 100%;
@@ -30,17 +50,11 @@ position:absolute;top:0;left:0;z-index:-1
   transition: all 1s;
 }
 
-.connectbutton:hover{
-  width:60px;
-	height:60px;
-  transform-style: preserve-3d;
-    transform: perspective(200em) rotateZ(360deg); 
-    box-shadow:  3px 3px rgba(67, 57, 57 ,0.3);
-    transition: all 1s ;
-}
+
 
 .homepage{
-background-color: #129252  ;   
+background-color: rgb(0, 121, 64) ;  
+min-height: 90vh; 
 }
 
 .homehead{
@@ -59,55 +73,90 @@ background-color: #129252  ;
 }
 
 .homeimg{
-  max-width: 80%;
-  margin: 0 2em;
+min-height: 19rem;
 }
 
-.row {
-  display: -ms-flexbox; /* IE 10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE 10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create two equal columns that sits next to each other */
-.column {
-  -ms-flex: 50%; /* IE 10 */
-  flex: 50%;
+.homeimg>img{
+  position: relative;
+  height: 19rem;
+  width: 19rem;
+  margin-left:20%;
   
 }
 
-.column img {
-margin: 0;
-  margin-top: 8px;
-  vertical-align: middle;
 
-  width: 77.5%;
-  height: 47%;
+.row2{
+  float: right;
+  width: 80%;
+}
+
+.column>img{
+  display: inline;
+  width: 50%;
 }
 
 
-.App-link {
-  color: #61dafb;
+
+.btn4{
+
+  min-height: 3rem;
+  color: aliceblue;
+  margin: auto;
+  text-align: center;
+  padding: 0.5rem;
+  transition: all 1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+  width: 20rem;
+background-color: black;
+border-radius: 5px;
+border: white solid 1px;
+font-size: 2.5rem;
+}
+.btn4:hover{
+  transform: scale(1.05);
+  background-color: black;
+  color: aliceblue;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imgholder{
+  display:flex;
+        flex-direction: column;
+} 
+
+
+.imgholder>img{
+  max-width: 60%;
+  margin-left: 20%;
+  background-color: rgb(234, 52, 52);
 }
 
-.loadingIndicator {
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid grey; /* Blue */
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
-  margin-top: 15px;
+.heading4{
+
+  color: bisque;
+  font-size: 4em;
+  margin-top: 3rem;
+
 }
 
+.footer{
+  background-image: linear-gradient(to bottom right,#000000,#242424);
+  padding: 0.6%;
+  color: aliceblue;
+  border-top: #d1d1d1 solid 2px;
+  
+}
+.footer>p{
+  display: inline;
+  margin: 10%;
+
+}
+
+.footimg{
+  margin-left: 1%;
+  transition: 0.6s all;
+}
+
+.footimg:hover{
+  transform: scale(1.2);
+}

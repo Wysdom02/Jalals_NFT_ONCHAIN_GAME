@@ -1,11 +1,14 @@
-import React, { Component, Fragment } from "react";
+import React, { Component} from "react";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import jalals from "../images/Jalals.jpeg";
 import '../App.css'
-import Image from 'react-bootstrap/Image'
-import Container from 'react-bootstrap/Container';
-
+import blast from '../images/blast.gif'
+import sun from '../images/sun.gif'
+import waves from '../images/waves.gif'
+import redsemi from '../images/redsemi.gif'
+import greensemi from '../images/greenrotar.gif'
+import bomb from '../images/bomb.gif'
+import factory from '../images/factory.gif'
 
 class Home extends Component {
   render() {
@@ -18,32 +21,40 @@ class Home extends Component {
         <Row>
           <Col md={5} >
             <Row> <h1 className="homehead">THE <br/> JALALS <br/> </h1> <h1 className="homehead2">#MAXBOMBING</h1></Row>
-          <Row > <img className="homeimg"
-              alt=""
-              height={330}
-              src="https://jalalstest.my.canva.site/videos/37fff48731c5d92b578bb926cee42ee6.gif"
+          <Row className="homeimg"> <img 
+              alt=" "
+              src={blast }
             />{' '} </Row>
           </Col>
           <Col>
-          <div class="row"> 
+          <div class="row2"> 
   <div class="column">
-    <img src="https://jalalstest.my.canva.site/videos/b93d988b666788de0f69691933eae5c6.gif"/>
-    <img  src="https://jalalstest.my.canva.site/videos/badf028a46421c273ade4a2535a57ba0.gif" />
+    <img src={sun} alt=" " />
+    <img  src={waves} alt=" "/>
 
   </div>
   <div class="column">
-    <img  src="https://jalalstest.my.canva.site/videos/4afabbf15679f4fdd2560f5c110b47c3.gif"/>
-    <img  src="https://jalalstest.my.canva.site/videos/d6096444b95c961d80695ff66779f0e0.gif" />
+    <img  src={redsemi}alt=" "/>
+    <img  src={greensemi} alt=" "/>
   </div>  
           </div>
           </Col>
         </Row>
       </div>
 
-      <div className="homepage2">
-
-      </div>
-
+      <Row className="attackpage">
+      <Col md={5} className="imgholder">
+      <img src={bomb} alt=" "></img>
+      <img src={factory} alt=" "></img>
+      </Col>
+      <Col>
+      <h1 className="homehead">THE JALALS ARE BOMBING!</h1>
+      <br/>
+      <br/>
+      <h4 className="homehead3">5,555 Jalals are coming your way to disrupt the bear market. We are gonna bomb your Ethereum Wallets with our CC0 Jalals.<br/>
+          See, Jalals are not your average humans, we are build for having fun and ducking around!</h4>
+      </Col>
+      </Row>
       </div>
     );
   }
